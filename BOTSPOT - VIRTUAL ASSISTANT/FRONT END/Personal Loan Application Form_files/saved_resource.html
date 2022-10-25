@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)https://widgets.jotform.io/configurableList/?qid=44&ref=https%3A%2F%2Fform.jotform.com&injectCSS=false -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Configurable list</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+
+    <link href="./jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.min.css">
+    <script src="./JotFormCustomWidget.min.js.download"></script><style>undefined</style>
+    <script src="./jquery-1.11.2.min.js.download"></script>
+    <script src="./jquery-ui.min.js.download"></script>
+    <script src="./jquery-ui-i18n.min.js.download"></script>
+
+    <script src="./scripts.min.js.download"></script>
+
+    <script>
+        function receiveMessage(params) {
+            if (params.data.cmd && params.data.cmd === 'injectStyle') {
+                var head = document.querySelector('head');
+                params.data.styleTags.forEach(element => {
+                    head.innerHTML += element;
+                });
+            }
+        }
+        window.addEventListener("message", receiveMessage, false);
+    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="true"><link rel="preconnect" href="https://fonts.gstatic.com/"><link rel="stylesheet" href="./css2"><style type="text/css">.checkbox, .radio {
+margin: 3px 0;
+min-width: 70px;
+}</style></head>
+
+<body style="font-family: &quot;Lucida Grande&quot;, sans-serif; background: transparent;" data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
+    <div id="listContainer" data-widget="533946093c1ad0c45d000070" style="overflow-x: auto;"><table id="list" style="" cellpadding="4" class="horizontal"><tbody><tr><th class="col1 translatable ">Creditor</th><th class="col2 translatable ">Liabilities</th><th class="col3 translatable ">Monthly Payments</th><th class="col4 buttonsColumn" style="display: none;">&nbsp;</th></tr><tr><td class="col1"><span class="mobileColumnName translatable">Creditor</span><textarea class="form-textarea translatable" placeholder="Hint Text"></textarea></td><td class="col2"><span class="mobileColumnName translatable">Liabilities</span><textarea class="form-textarea translatable" placeholder="Hint Text"></textarea></td><td class="col3"><span class="mobileColumnName translatable">Monthly Payments</span><textarea class="form-textarea translatable" placeholder="Hint Text"></textarea></td><td class="col4 buttonsColumn" style="display: none;"><button class="remove"><span class="remove-icon">x</span></button></td></tr></tbody></table><button aria-label="Add Row" class="add"><span class="add-icon">+</span><span class="add-text">Add Row</span></button></div>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
